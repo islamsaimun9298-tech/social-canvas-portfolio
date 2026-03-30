@@ -31,14 +31,14 @@ const HeroSection = () => {
             className="order-2 lg:order-1"
           >
             <p className="text-primary font-medium text-sm tracking-widest uppercase mb-4">
-              Digital Marketing Specialist
+              System Analyst & Professional Writer
             </p>
             <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-[1.1] mb-6">
               Hi, I'm{" "}
               <span className="text-gradient">Hridoy Hasan Kabbo</span>
             </h1>
             <p className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-lg mb-8">
-              Empowering brands through strategic content marketing, SEO optimization, and compelling storytelling. I turn ideas into impactful digital experiences that drive growth.
+              I thrive at the intersection of technology and communication, bringing a dual passion for System Analysis and Professional Writing to every project. Specialist in making digital systems work better for people across Government, Banking, E-commerce, and Healthcare sectors.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 mb-10">
@@ -90,7 +90,7 @@ const HeroSection = () => {
               <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-[420px] lg:h-[420px] rounded-full overflow-hidden border-4 border-primary/30 glow-md animate-float">
                 <img
                   src={profilePhoto}
-                  alt="Hridoy Hasan Kabbo - Digital Marketing Specialist"
+                  alt="Hridoy Hasan Kabbo - System Analyst & Professional Writer"
                   className="w-full h-full object-cover"
                   width={768}
                   height={960}
