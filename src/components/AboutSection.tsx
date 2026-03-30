@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { GraduationCap, MapPin, Star } from "lucide-react";
+import { Star, MapPin } from "lucide-react";
 
 const stats = [
-  { label: "Services Offered", value: "8+" },
-  { label: "Areas of Expertise", value: "5+" },
+  { label: "Sectors Served", value: "4+" },
+  { label: "Services Offered", value: "10+" },
   { label: "Client Satisfaction", value: "100%" },
 ];
 
@@ -22,7 +22,7 @@ const AboutSection = () => {
             About Me
           </p>
           <h2 className="font-heading text-3xl md:text-5xl font-bold">
-            Crafting Digital <span className="text-gradient">Excellence</span>
+            Bridging <span className="text-gradient">Technology & Communication</span>
           </h2>
         </motion.div>
 
@@ -35,24 +35,20 @@ const AboutSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              I'm <span className="text-foreground font-semibold">Hridoy Hasan Kabbo</span> — a passionate digital marketing specialist based in Dhaka, Bangladesh. I specialize in bridging the gap between compelling content and measurable business outcomes.
+              I'm <span className="text-foreground font-semibold">Hridoy Hasan Kabbo</span> — a System Analyst and Professional Writer based in Dhaka, Bangladesh.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              With a deep understanding of modern content strategies, SEO dynamics, and brand storytelling, I help businesses and individuals amplify their digital presence. My approach blends creative thinking with data-driven insights to deliver campaigns that resonate and convert.
+              As a System Analyst, I dive into the heart of digital systems, websites, and mobile applications to uncover crucial improvements and refine user flows for intuitive experiences. My writing allows me to connect and persuade—crafting insightful pieces on AI, Cybersecurity, and Technical Reports.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              From scriptwriting and voice-over production to social media security consulting, I offer a versatile skill set designed to meet the evolving needs of today's digital landscape.
+              I blend analytical rigor with narrative flair to create documentation and content that inspires action. My expertise spans across Government, Banking, E-commerce, and Healthcare sectors.
             </p>
 
-            {/* Info cards */}
+            {/* Info card */}
             <div className="flex flex-col sm:flex-row gap-4">
               <div className="flex items-center gap-3 glass rounded-lg px-5 py-3">
                 <MapPin size={18} className="text-primary shrink-0" />
                 <span className="text-sm text-secondary-foreground">Dhaka, Bangladesh</span>
-              </div>
-              <div className="flex items-center gap-3 glass rounded-lg px-5 py-3">
-                <GraduationCap size={18} className="text-primary shrink-0" />
-                <span className="text-sm text-secondary-foreground">Dhaka College</span>
               </div>
             </div>
           </motion.div>
@@ -85,11 +81,11 @@ const AboutSection = () => {
               </div>
               <ul className="space-y-3">
                 {[
-                  "Strategic content planning & execution",
-                  "SEO-driven growth & organic reach optimization",
-                  "Professional voice-over & script production",
-                  "Social media security & brand protection",
-                  "Product marketing & go-to-market strategy",
+                  "System analysis & IT consulting for enterprise platforms",
+                  "Professional writing — scripts, ghostwriting & journalism",
+                  "SEO-driven content marketing & digital strategy",
+                  "UX research & UI/UX design for web & mobile",
+                  "Social media security & account recovery",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-muted-foreground text-sm">
                     <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
