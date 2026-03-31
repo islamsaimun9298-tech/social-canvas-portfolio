@@ -4,13 +4,19 @@ import photoSteps from "@/assets/photo-steps.jpg";
 import photoCasual from "@/assets/photo-casual.jpg";
 import photoLights from "@/assets/photo-lights.jpg";
 import photoStreet from "@/assets/photo-street.jpg";
+import photoHeic1 from "@/assets/photo-heic1.jpg";
+import photoHeic2 from "@/assets/photo-heic2.jpg";
+import photoHeic3 from "@/assets/photo-heic3.jpg";
 
 const photos = [
-  { src: photoLights, alt: "Hridoy Hasan Kabbo - Professional portrait", span: "md:col-span-2 md:row-span-2" },
-  { src: photoSunset, alt: "Hridoy Hasan Kabbo - Outdoor portrait", span: "" },
+  { src: photoLights, alt: "Hridoy Hasan Kabbo - Portrait with lights", span: "md:col-span-2 md:row-span-2" },
+  { src: photoSunset, alt: "Hridoy Hasan Kabbo - Sunset portrait", span: "" },
   { src: photoStreet, alt: "Hridoy Hasan Kabbo - Street style", span: "" },
+  { src: photoHeic1, alt: "Hridoy Hasan Kabbo - Portrait 1", span: "" },
   { src: photoSteps, alt: "Hridoy Hasan Kabbo - Casual portrait", span: "md:col-span-2" },
+  { src: photoHeic2, alt: "Hridoy Hasan Kabbo - Portrait 2", span: "" },
   { src: photoCasual, alt: "Hridoy Hasan Kabbo - Relaxed portrait", span: "" },
+  { src: photoHeic3, alt: "Hridoy Hasan Kabbo - Portrait 3", span: "md:col-span-2" },
 ];
 
 const GallerySection = () => {
@@ -35,7 +41,7 @@ const GallerySection = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-[200px] md:auto-rows-[220px]">
           {photos.map((photo, i) => (
             <motion.div
-              key={photo.src}
+              key={i}
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
