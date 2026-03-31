@@ -22,7 +22,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between h-16 md:h-20">
         <a href="#home" className="font-heading text-xl font-bold text-gradient">
-          HHK
+          Hridoy Hasan Kabbo
         </a>
 
         {/* Desktop */}
@@ -71,7 +71,14 @@ const Navbar = () => {
                 <li key={l.href}>
                   <a
                     href={l.href}
-                    onClick={() => setIsOpen(false)}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setIsOpen(false);
+                      const el = document.querySelector(l.href);
+                      if (el) {
+                        setTimeout(() => el.scrollIntoView({ behavior: "smooth" }), 100);
+                      }
+                    }}
                     className="block py-3 px-4 rounded-lg text-muted-foreground hover:text-primary hover:bg-secondary/50 transition-all"
                   >
                     {l.label}
@@ -81,7 +88,14 @@ const Navbar = () => {
               <li>
                 <a
                   href="#contact"
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsOpen(false);
+                    const el = document.querySelector("#contact");
+                    if (el) {
+                      setTimeout(() => el.scrollIntoView({ behavior: "smooth" }), 100);
+                    }
+                  }}
                   className="block mt-2 text-center py-3 px-4 rounded-lg bg-primary text-primary-foreground font-semibold"
                 >
                   Hire Me
