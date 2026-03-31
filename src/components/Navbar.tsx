@@ -88,7 +88,14 @@ const Navbar = () => {
               <li>
                 <a
                   href="#contact"
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsOpen(false);
+                    const el = document.querySelector("#contact");
+                    if (el) {
+                      setTimeout(() => el.scrollIntoView({ behavior: "smooth" }), 100);
+                    }
+                  }}
                   className="block mt-2 text-center py-3 px-4 rounded-lg bg-primary text-primary-foreground font-semibold"
                 >
                   Hire Me
