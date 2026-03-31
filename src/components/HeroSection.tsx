@@ -52,7 +52,7 @@ const HeroSection = () => {
             {/* Social links */}
             <div className="flex items-center gap-4">
               <a
-                href="https://www.facebook.com/profile.php?id=100095498680498"
+                href="https://www.facebook.com/KING.KIDDO.MR"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full border border-border text-muted-foreground hover:text-primary hover:border-primary transition-colors"
