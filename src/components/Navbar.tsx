@@ -22,7 +22,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between h-16 md:h-20">
         <a href="#home" className="font-heading text-xl font-bold text-gradient">
-          HHK
+          Hridoy Hasan Kabbo
         </a>
 
         {/* Desktop */}
