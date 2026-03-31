@@ -46,7 +46,7 @@ const ContactSection = () => {
               <h3 className="font-heading font-semibold text-lg mb-6">Connect With Me</h3>
               <div className="space-y-5">
                 <a
-                  href="https://www.facebook.com/KING.KIDDO.MR"
+                  href="https://www.facebook.com/profile.php?id=100095498680498"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors group"
