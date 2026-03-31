@@ -71,7 +71,14 @@ const Navbar = () => {
                 <li key={l.href}>
                   <a
                     href={l.href}
-                    onClick={() => setIsOpen(false)}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setIsOpen(false);
+                      const el = document.querySelector(l.href);
+                      if (el) {
+                        setTimeout(() => el.scrollIntoView({ behavior: "smooth" }), 100);
+                      }
+                    }}
                     className="block py-3 px-4 rounded-lg text-muted-foreground hover:text-primary hover:bg-secondary/50 transition-all"
                   >
                     {l.label}
