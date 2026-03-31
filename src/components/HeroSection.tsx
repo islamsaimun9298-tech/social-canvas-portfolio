@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Facebook, Linkedin } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpg";
+import ParticleBackground from "./ParticleBackground";
 
 const HeroSection = () => {
   return (
@@ -10,6 +11,7 @@ const HeroSection = () => {
     >
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary/10">
+        <ParticleBackground />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,hsl(var(--primary)/0.15),transparent_60%)]" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
       </div>

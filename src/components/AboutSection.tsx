@@ -38,10 +38,10 @@ const AboutSection = () => {
               I'm <span className="text-foreground font-semibold">Hridoy Hasan Kabbo</span> — a System Analyst and Professional Writer based in Dhaka, Bangladesh.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              As a System Analyst, I dive into the heart of digital systems, websites, and mobile applications to uncover crucial improvements and refine user flows for intuitive experiences. My writing allows me to connect and persuade—crafting insightful pieces on AI, Cybersecurity, and Technical Reports.
+              As a <span className="text-highlight">System Analyst</span>, I dive into the heart of digital systems, websites, and mobile applications to uncover crucial improvements and refine user flows for intuitive experiences. My writing allows me to connect and persuade—crafting insightful pieces on <span className="text-highlight">AI</span>, <span className="text-highlight">Cybersecurity</span>, and <span className="text-highlight">Technical Reports</span>.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              I blend analytical rigor with narrative flair to create documentation and content that inspires action. My expertise spans across Government, Banking, E-commerce, and Healthcare sectors.
+              I blend <span className="text-highlight">analytical rigor</span> with <span className="text-highlight">narrative flair</span> to create documentation and content that inspires action. My expertise spans across <span className="text-primary font-semibold">Government</span>, <span className="text-primary font-semibold">Banking</span>, <span className="text-primary font-semibold">E-commerce</span>, and <span className="text-primary font-semibold">Healthcare</span> sectors.
             </p>
 
             {/* Info card */}
