@@ -9,7 +9,7 @@ const ContactSection = () => {
     e.preventDefault();
     const subject = encodeURIComponent(`Portfolio Inquiry from ${formData.name}`);
     const body = encodeURIComponent(formData.message);
-    window.open(`mailto:contact@hridoykabbo.com?subject=${subject}&body=${body}`);
+    window.open(`mailto:hridoyhasankabbo1@gmail.com?subject=${subject}&body=${body}`);
   };
 
   return (
