@@ -70,7 +70,8 @@ const ServicesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group glass rounded-xl p-7 hover:border-primary/40 transition-all duration-300 hover:glow-sm"
+              whileHover={{ y: -8, scale: 1.02 }}
+              className="group glass rounded-xl p-7 hover:border-primary/40 transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(160,70%,45%,0.25)] cursor-default"
             >
               <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
                 <s.icon size={22} className="text-primary" />

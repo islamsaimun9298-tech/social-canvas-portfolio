@@ -83,6 +83,10 @@
   .section-padding {
     @apply py-20 md:py-32 px-4 md:px-8;
   }
+
+  .text-highlight {
+    @apply font-semibold text-foreground;
+  }
 }
 
 html {
@@ -92,4 +96,13 @@ html {
 ::selection {
   background: hsl(160, 70%, 45%, 0.3);
   color: hsl(180, 10%, 92%);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
 }
